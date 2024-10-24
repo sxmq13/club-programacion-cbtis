@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Alfa+Slab+One&family=Kablammo&display=swap');
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background-color: black;
+}
+nav ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+nav ul li{
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+nav ul li a{
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+nav ul li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1pz var(--clr);
+}
+nav ul li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
 }
