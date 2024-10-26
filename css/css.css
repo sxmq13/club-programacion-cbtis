@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 html{
     background-color: #212121;
@@ -57,16 +56,74 @@ nav ul li a:hover::before{
     width: 100%;
     filter: drop-shadow(0 0 25px var(--clr));
 }
+/*---------------------------------------------------------------*/
+.ques h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+    color: #ff6493;
+}
+.comofun h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+    color: #ffdd1c;
+}
+.concur h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+    color: #00dc82;
+}
+.paraque h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+    color: #dc00d4;
+}
+.ques .info, .fiu, .que{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wer, .tui{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    background-color: #555;
+    border-radius: 20px;
+    width: 60%;
+    padding: 30px;
+}
+.ques p, .comofun p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    background-color: #555;
+    border-radius: 20px;
+    width: 50%;
+    padding: 30px;
+}
+.comofun p{
+    width: 100%;
+}
+.comofun .info{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    padding: 20px;
+}
 /*-----------------------------------------------------------*/
 .cards {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     max-width: 1200px;
     padding: 20px;
 }
 .card {
-    background-color: #ffffff;
+    background-color: #555;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -79,11 +136,60 @@ nav ul li a:hover::before{
 }
 .card h2 {
     font-size: 1.25rem;
-    color: #333;
+    color: #00dc82;
     margin-bottom: 10px;
 }
 .card p {
     font-size: 0.95rem;
-    color: #555;
+    color: white;
     line-height: 1.5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+
+thead {
+    background-color: #dc00d4;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #555;
+}
+
+tr:nth-child(even) {
+    background-color: #131313;
+}
+
+tr:hover {
+    background-color: #2a0021;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr td:first-child {
+    font-weight: bold;
+    color: #ffffff;
+}
+button {
+    padding: 10px 20px;
+    background-color: #0fb4c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0a727a;
 }
